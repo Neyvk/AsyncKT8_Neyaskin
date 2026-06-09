@@ -16,9 +16,9 @@ class Program
             );
 
         randomNumbers.Subscribe(
-            x => Console.WriteLine($"Received number: {x}"),
-            ex => Console.WriteLine($"Error: {ex.Message}"),
-            () => Console.WriteLine("Stream completed")
+            x => Console.WriteLine($"Полученное число: {x}"),
+            ex => Console.WriteLine($"Ошибка: {ex.Message}"),
+            () => Console.WriteLine("Конец генерации")
         );
 
         Console.ReadLine();
